@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @egg.user %>
+</p>
+
+<p>
+  <strong>Uses:</strong>
+  <%= @egg.uses %>
+</p>
+
+<%= link_to 'Edit', edit_egg_path(@egg) %> |
+<%= link_to 'Back', eggs_path %>
