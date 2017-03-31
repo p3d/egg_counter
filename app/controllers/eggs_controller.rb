@@ -29,6 +29,7 @@ class EggsController < ApplicationController
   # POST /eggs.json
   def create
     @egg = Egg.new(egg_params)
+    @egg.user = current_user
 
     respond_to do |format|
       if @egg.save
